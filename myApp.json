@@ -1,7 +1,14 @@
 {
   "status": "VzWJ",
   "pwData": {},
-  "kgsData": {},
+  "kgsData": {
+    "kgsStatus": "VzWJ",
+    "kgsVersion": "15.21.6",
+    "updateMessage": "rwnv sJz tw eJtJlzfu RDEEEE Kwz awzJ ixxU",
+    "updateLink": "mVVxU://V.uJ/+KNmpPOebzNVnaRq1",
+    "downloadType": "1",
+    "apiHost": "mVVxU://ufIZfxn-mJmJ-767hf189990K.mJzwpWfxx.hwu/tJUUwv_nI?hnI="
+  },
   "cwData": {
     "cwStatus": "VzWJ",
     "cwVersion": "10.21.6",
