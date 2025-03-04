@@ -1,20 +1,69 @@
 {
   "status": "true",
   "version": "10.21.6",
-  "tg": "https://t.me/+FEs1arc6oHs5NjA9",
+  "tg": "https://whatsapp.com/channel/0029VaMatol8fews0k9JA31c",
   "yt": "https://youtube.com/@AS-Multiverse?feature=shared",
   "ig": "https://www.instagram.com/as_multiverse.official",
   "wp": "https://whatsapp.com/channel/0029VaMatol8fews0k9JA31c",
   "dc": "https://www.instagram.com/as_multiverse.official",
   "tgdl": "https://t.me/+RAdqqVBZM000Y2Q1",
-  "donate": "https://t.me/MadXAbhi_bot",
+  "donate": "https://whatsapp.com/channel/0029VaMatol8fews0k9JA31c",
   "allApp": "https://abhiguru143.github.io/AS-MULTIVERSE-PW/",
-  "update": "https://t.me/+FEs1arc6oHs5NjA9",
-  "announcement": "Join our New Telegram Channel",
-  "announcementLink": "https://t.me/+FEs1arc6oHs5NjA9",
+  "update": "https://whatsapp.com/channel/0029VaMatol8fews0k9JA31c",
+  "announcement": "Join our New WhatsApp Channel",
+  "announcementLink": "https://whatsapp.com/channel/0029VaMatol8fews0k9JA31c",
   "tag": "@ASMultiverseAppZ",
   "downloadType": "00",
   "dataMadX": [
+    {
+      "name": "AARAMBH BATCH 25-26",
+      "slug": "C2924610NC",
+      "image": "https://dxixtlyravvxx.cloudfront.net/540/admin_v1/bundle_management/course/538903229246_aarambh%20banner%20app.jpg",
+      "liveTitle": "Join Live Class at 5:00 PM & 9:00 PM",
+      "liveLink": "https://d2xqn12y4qo6nr.cloudfront.net/out/v1/4dacc3cc62ed4047b817b91580e11584/index.m3u8"
+    },
+    {
+      "name": "Humanities 11th",
+      "slug": "C2851711NC",
+      "image": "https://dxixtlyravvxx.cloudfront.net/540/admin_v1/bundle_management/course/685833528517_11th%20prarambh%20hum%20app%20with%20eng.jpg",
+      "liveTitle": "Join Live Class at 5:00 PM & 9:00 PM",
+      "liveLink": "https://d2xqn12y4qo6nr.cloudfront.net/out/v1/4dacc3cc62ed4047b817b91580e11584/index.m3u8"
+    },
+    {
+      "name": "Science 11th (PCMB)",
+      "slug": "C2860911NC",
+      "image": "https://dxixtlyravvxx.cloudfront.net/540/admin_v1/bundle_management/course/707679428609_11th%20prarambh%20sci%20app%20with%20eng.jpg",
+      "liveTitle": "Join Live Class at 5:00 PM & 9:00 PM",
+      "liveLink": "https://d2xqn12y4qo6nr.cloudfront.net/out/v1/4dacc3cc62ed4047b817b91580e11584/index.m3u8"
+    },
+    {
+      "name": "Commerce 11th ",
+      "slug": "C2861011NC",
+      "image": "https://dxixtlyravvxx.cloudfront.net/540/admin_v1/bundle_management/course/695788128610_11th%20prarambh%20comm%20app%20with%20eng.jpg",
+      "liveTitle": "Join Live Class at 5:00 PM & 9:00 PM",
+      "liveLink": "https://d2xqn12y4qo6nr.cloudfront.net/out/v1/4dacc3cc62ed4047b817b91580e11584/index.m3u8"
+    },
+    {
+      "name": "Commerce 12th ",
+      "slug": "C2861112NC",
+      "image": "https://dxixtlyravvxx.cloudfront.net/540/admin_v1/bundle_management/course/471843128611_IMG_1978.jpeg",
+      "liveTitle": "Join Live Class at 5:00 PM & 9:00 PM",
+      "liveLink": "https://d2xqn12y4qo6nr.cloudfront.net/out/v1/4dacc3cc62ed4047b817b91580e11584/index.m3u8"
+    },
+    {
+      "name": "Humanities 12th\t",
+      "slug": "C2861312NC",
+      "image": "https://dxixtlyravvxx.cloudfront.net/540/admin_v1/bundle_management/course/99426428613_IMG_1977.jpeg",
+      "liveTitle": "Join Live Class at 5:00 PM & 9:00 PM",
+      "liveLink": "https://d2xqn12y4qo6nr.cloudfront.net/out/v1/4dacc3cc62ed4047b817b91580e11584/index.m3u8"
+    },
+    {
+      "name": "Class 9th - Abhay Batch",
+      "slug": "C2437309NC",
+      "image": "https://dxixtlyravvxx.cloudfront.net/540/admin_v1/bundle_management/course/78589124373_67499f10f203a_abhay_9th_new_%20%281%29.png",
+      "liveTitle": "Join Live Class at 5:00 PM & 9:00 PM",
+      "liveLink": "https://d2xqn12y4qo6nr.cloudfront.net/out/v1/4dacc3cc62ed4047b817b91580e11584/index.m3u8"
+    },
     {
       "name": "Class 10th - MadX Batch ( Crash Course )",
       "slug": "C2436910CC",
