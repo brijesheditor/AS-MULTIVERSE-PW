@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS MULTIVERSE - Login</title>
+    <style>
+        :root {
+            --bg-light: #f9f9f9;
+            --bg-dark: #1e1e1e;
+            --text-light: #000;
+            --text-dark: #fff;
+            --border-light: #d1d1d1;
+            --border-dark: #444;
+            --primary-color: #6a5acd;
+            --container-light: #fff;
+            --container-dark: #2a2a2a;
+        }
+
+        * {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .light-mode {
+            background-color: var(--bg-light);
+            color: var(--text-light);
+        }
+
+        .dark-mode {
+            background-color: var(--bg-dark);
+            color: var(--text-dark);
+        }
+
+        .container {
+            padding: 30px;
+            border-radius: 10px;
+            width: 380px;
+            text-align: center;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, border 0.3s;
+        }
+
+        .light-mode .container {
+            background: var(--container-light);
+            border: 1px solid var(--border-light);
+        }
+
+        .dark-mode .container {
+            background: var(--container-dark);
+            border: 1px solid var(--border-dark);
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 14px 10px;
+            border: 2px solid var(--border-light);
+            background: transparent;
+            border-radius: 6px;
+            outline: none;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .dark-mode .input-box input {
+            border-color: var(--border-dark);
+            color: var(--text-dark);
+            background: #2a2a2a;
+        }
+
+        .input-box label {
+            position: absolute;
+            left: 12px;
+            top: 16px;
+            font-size: 16px;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            color: #888;
+            background: transparent;
+            padding: 0 4px;
+        }
+
+        .input-box input:focus,
+        .input-box input:not(:placeholder-shown) {
+            border-color: var(--primary-color);
+        }
+
+        .input-box input:focus + label,
+        .input-box input:not(:placeholder-shown) + label {
+            top: -8px;
+            left: 10px;
+            font-size: 12px;
+            color: var(--primary-color);
+            background: var(--container-light);
+            padding: 0 4px;
+        }
+
+        .dark-mode .input-box input:focus + label,
+        .dark-mode .input-box input:not(:placeholder-shown) + label {
+            background: var(--container-dark);
+        }
+
+        .password-box {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .show-hide {
+            position: absolute;
+            right: 12px;
+            cursor: pointer;
+            width: 22px;
+            transition: filter 0.3s;
+        }
+
+        .light-mode .show-hide {
+            filter: invert(0%);
+        }
+
+        .dark-mode .show-hide {
+            filter: invert(100%);
+        }
+
+        .button {
+            width: 100%;
+            padding: 14px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #4b40c5;
+        }
+
+        .whatsapp-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background: #25D366;
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .whatsapp-btn img {
+            width: 20px;
+            margin-right: 8px;
+        }
+
+        .toggle-mode {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .response-box {
+            display: none;
+            padding: 30px;
+            border-radius: 10px;
+            width: 380px;
+            text-align: center;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, border 0.3s;
+        }
+
+        .light-mode .response-box {
+            background: var(--container-light);
+            border: 1px solid var(--border-light);
+        }
+
+        .dark-mode .response-box {
+            background: var(--container-dark);
+            border: 1px solid var(--border-dark);
+        }
+
+        .token-text {
+            font-size: 16px;
+            margin-bottom: 20px;
+            word-wrap: break-word;
+        }
+
+        .copy-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .copy-btn:hover {
+            background: #4b40c5;
+        }
+    </style>
+</head>
+<body class="light-mode">
+
+    <button class="toggle-mode" onclick="toggleMode()">🌙</button>
+
+    <div class="container" id="loginBox">
+        <h1>AS MULTIVERSE</h1>
+        <h2>Sign in to your account</h2>
+
+        <div class="input-box">
+            <input type="text" id="email" placeholder=" " required>
+            <label>Email or Phone</label>
+        </div>
+
+        <div class="input-box password-box">
+            <input type="password" id="password" placeholder=" " required>
+            <label>Password</label>
+            <img src="https://cdn-icons-png.flaticon.com/512/2767/2767146.png" alt="Hide" class="show-hide" onclick="togglePassword()">
+        </div>
+
+        <button class="button" onclick="login()">Sign in</button>
+
+        <a href="https://whatsapp.com/channel/0029VaMatol8fews0k9JA31c" class="whatsapp-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            Join WhatsApp
+        </a>
+    </div>
+
+    <div class="container response-box" id="responseBox">
+        <h1>Login Successful</h1>
+        <div class="token-text" id="tokenText"></div>
+        <button class="copy-btn" onclick="copyToken()">Copy Token</button>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            const showHideIcon = document.querySelector(".show-hide");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                showHideIcon.src = "https://cdn-icons-png.flaticon.com/512/2767/2767194.png";
+            } else {
+                passwordInput.type = "password";
+                showHideIcon.src = "https://cdn-icons-png.flaticon.com/512/2767/2767146.png";
+            }
+        }
+
+        function toggleMode() {
+            const body = document.body;
+            const modeBtn = document.querySelector(".toggle-mode");
+
+            if (body.classList.contains("dark-mode")) {
+                body.classList.remove("dark-mode");
+                body.classList.add("light-mode");
+                modeBtn.innerText = "🌙";
+            } else {
+                body.classList.remove("light-mode");
+                body.classList.add("dark-mode");
+                modeBtn.innerText = "☀️";
+            }
+        }
+        
+        async function login() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (!email || !password) {
+                alert('Please enter email/phone and password');
+                return;
+            }
+
+            const url = "https://wbspec.crwilladmin.com/api/v1/login";
+            
+            const headers = {
+                "User-Agent": "Mozilla/5.0",
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+                "apptype": "web",
+                "appver": "1",
+                "origin": "https://web.careerwill.com"
+            };
+
+            const payload = {
+                "userid": email,
+                "pwd": password,
+                "deviceIMEI": "",
+                "deviceModel": "Mozilla/5.0",
+                "deviceType": "web",
+                "deviceVersion": "Mozilla/5.0"
+            };
+
+            try {
+                const response = await fetch(url, {
+                    method: "POST",
+                    headers: headers,
+                    body: JSON.stringify(payload)
+                });
+
+                const data = await response.json();
+
+                if (data.responseCode === 200) {
+                    document.getElementById('loginBox').style.display = 'none';
+                    document.getElementById('responseBox').style.display = 'block';
+                    document.getElementById('tokenText').innerText = data.data.token;
+                } else {
+                    alert('Login failed: ' + data.responseMessage);
+                }
+            } catch (error) {
+                alert("Error: " + error.message);
+            }
+        }
+
+        function copyToken() {
+            navigator.clipboard.writeText(document.getElementById('tokenText').innerText).then(() => {
+                alert('Token copied to clipboard!');
+            });
+        }
+    </script>
+
+</body>
+</html>
